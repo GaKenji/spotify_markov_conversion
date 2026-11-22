@@ -1,0 +1,39 @@
+
+# Ambiente virtual
+.venv/
+venv/
+env/
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos de configuração local
+.env
+.env.*
+!.env.example
+
+# Configurações de IDE
+.vscode/
+.idea/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos temporários
+*.log
+*.tmp
+
+# Dados originais (não publicar sem verificar licença)
+data/*
+!data/.gitkeep
+
+# Resultados gerados
+outputs/*
+!outputs/.gitkeep
