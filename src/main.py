@@ -7,9 +7,13 @@ import visualizacao as vz
 df = carregarDados()#Carrega a base de dados
 frequencias = analisarFrequencias(df)#Realiza uma análise de frequências
 novatos = identificarFreeNovatos(df)#Identifica usuários novatos com pouco tempo de uso
+resultados = mp.analisarSensibilidade(novatos)#Análise de sendibilidade para deduzir um p_permanencia = p11 da matriz de transição
+
+print("\nANÁLISE DE SENSIBILIDADE")
+print(resultados.to_string(index=False))
 
 #Probabilidade de um usuário que está no estado Free Novato continuar nesse mesmo estado no próximo ciclo (semestre).
-p_permanencia = None
+p_permanencia = 0.7 #70% como hipótese de simulação
 
 if p_permanencia is None:
     raise ValueError("Atribua um valor justificado a p_permanencia")
